@@ -6,6 +6,6 @@ app = Flask(__name__)
 @app.route('/') # url, path, rota, caminho, link, uri
 def inicio():
     resultado =  {
-        "Nome": "Daniel"
+        "Nome": "Gustavo"
     }
     return [resultado]
