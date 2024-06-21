@@ -9,3 +9,17 @@ def inicio():
         "Nome": "Daniel"
     }
     return [resultado]
+
+@app.route('/consulta')
+def consulta():
+    resultado = {
+    "motivo_atendimento": "atropelamento",
+    "diagnostico": "costela quebra",
+    "tratamento_recomendado": "imobilização por 7 dias",
+    "observacao": "animal com diabete",
+    "Id_animal": "456",
+    "data_hora": "1711813393"
+    }
+    return resultado
+
+
