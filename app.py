@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 @app.route('/AnimalParaAdocao') # URL, path, rota, caminho, link, URI
-def get_animal_info():
+def animal():
     resultado = {
         "nomeDoAnimal": "pitoco",
         "especieDoAnimal": "felino",
