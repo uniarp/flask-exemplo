@@ -75,4 +75,16 @@ def consulta():
     "Id_animal": "456",
     "data_hora": "1711813393"
     }
-    return resultado
+    return [resultado]
+
+@app.route('/cadastrartutor')
+def salvar():
+    resultado = {
+        "nome_animal" : "Carreta",
+        "especie" : "cachoro",
+        "raca" : "São Bernado",
+        "peso" : "67 Kg",
+        "idade" : "2 anos",
+        "rfid" : "1711813393"
+    }
+    return [resultado]
