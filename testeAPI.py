@@ -6,9 +6,9 @@ app = Flask(__name__)
 @app.route('/') # url, path, rota, caminho, link, uri
 def inicio():
     resultado =  {
-        "Atendimento"
-        "motivo_atendimento: atropelamento",
-        "observacao: alergia alimentar",
-        "Id_animal: 01234",
-        "data_hora: 10:30",
+        "motivo_atendimento" : "atropelamento",
+        "observacao" : "alergia alimentar",
+        "Id_animal" : "01234",
+        "data_hora" : "10:30"
     }
+    return [resultado]
