@@ -13,6 +13,13 @@ def historico_clinico():
         "data_agendada": "24/04/2019",
 
 # http://127.0.0.1:5000/soma?a=10&b=15
+@app.route('/cadastrar_Doencas') # url, path, rota, caminho, link, uri
+def inicio():
+    resultado =  {
+        "id_doenca": "123",
+        "nome_doença": "Ehrlichiose",
+        "sintomas": "apatia, febre, vômito",
+        "tratamentos_associado": "antibióticos",
 
 @app.route('/animal') # url, path, rota, caminho, link, uri
 def animal():
