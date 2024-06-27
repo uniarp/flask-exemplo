@@ -2,6 +2,18 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+
+# http://127.0.0.1:5000/cadastrarTutor
+@app.route('/cadastrarTutor')
+def cadastrarTutor():
+    resultado = {
+        "id_tutor": "321",
+        "nome": "Gustavo Miguel",
+        "endereço": "Rua Avenidade Paulista, N70",
+        "telefone": "49912345678",
+        "email": "gustavomiguel0312@gmail.com"
+        }
+    return [resultado]
 @app.route('/AnimalParaAdocao') # URL, path, rota, caminho, link, URI
 def AnimalParaAdocao():
     resultado = {
@@ -64,4 +76,3 @@ def consulta():
     "data_hora": "1711813393"
     }
     return resultado
-
