@@ -1,7 +1,15 @@
-from flask import Flask, request
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+@app.route('/AnimalParaAdocao') # URL, path, rota, caminho, link, URI
+def animal():
+    resultado = {
+        "nomeDoAnimal": "pitoco",
+        "especieDoAnimal": "felino",
+        "corPredominanteDoAnimal": "preto",
+        "dadosDeNascimentoDoAnimal": "15/05/1997",
+        "racaDoAnimal": "Lulu da pomerânia"
 
 # http://127.0.0.1:5000/
 
@@ -43,4 +51,4 @@ def tutor():
         "endereco": "Rua Barretos n222",
         "cons_cadun": "https://imgur.com/gallery/KezmxiX"
     }
-    return [resultado]
+    return resultado
