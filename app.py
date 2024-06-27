@@ -92,3 +92,29 @@ def salvar():
         "rfid" : "1711813393"
     }
     return [resultado]
+
+@app.route('/cadastrar_consulta')
+def cadastrar_consulta():
+    resultado = [
+        {"motivo_atendimento" : "atropelamento",
+        "diagnostico" : "costela quebra",
+        "tratamento_recomendado" : "imobilização por 7 dias",
+        "observacao" : "animal com diabete",
+        "Id_animal" : "456",
+        "data_hora" : "1711813393"}
+         {"motivo_atendimento" : "hemorroida",
+        "diagnostico" : "flornotoba",
+        "tratamento_recomendado" : "hipoglos",
+        "observacao" : "x",
+        "Id_animal" : "454",
+        "data_hora" : "1711843293"}
+         {"motivo_atendimento" : "ele esta falando",
+        "diagnostico" : "o dono é o dr. dolirou",
+        "tratamento_recomendado" : "gardenal para o dono",
+        "observacao" : "x",
+        "Id_animal" : "601",
+        "data_hora" : "7483279843"}
+    ]
+    return [resultado]
+
+    
