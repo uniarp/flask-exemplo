@@ -5,5 +5,7 @@ $ pip install Flask
 
 $ git clone https://github.com/uniarp/flask-exemplo.git
 
-$ flask --version
-$ flask --app teste app
+$ cd ./flask-exemplo/
+
+$ flask --version  
+$ flask --app app run
