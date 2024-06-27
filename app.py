@@ -28,11 +28,17 @@ def AnimalParaAdocao():
 
 @app.route('/historico_clinico') # url, path, rota, caminho, link, uri
 def historico_clinico():
-    resultado =  {
-        "Nome_tutor": "Daniel",
+    resultado =  [
+        {"Nome_tutor": "Daniel",
         "nome_animal": "Bolo",
-        "data_agendada": "24/04/2019",
-    }
+        "data_agendada": "24/04/2019",},
+        {"Nome_tutor": "Michelle Obamma",
+        "nome_animal": "Minecraft",
+        "data_agendada": "24/04/2132",},
+        {"Nome_tutor": "Tereza da silva",
+        "nome_animal": "Phineas",
+        "data_agendada": "24/04/2029",}
+    ]
     return [resultado]
 # http://127.0.0.1:5000/soma?a=10&b=15
 @app.route('/cadastrar_Doencas') # url, path, rota, caminho, link, uri
