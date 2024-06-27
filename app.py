@@ -92,3 +92,35 @@ def salvar():
         "rfid" : "1711813393"
     }
     return [resultado]
+
+@app.route('/listar_tutores')
+def listar_tutor():
+    resultado = [{
+        "cpf": "000.000.000-00",
+        "nome": "Serjao Berranteiro",
+        "data_nascimento": "1712275315",
+        "email": "sergo12345cacadorbaum@yahoo.com",
+        "telefone": "49 99999-9999",
+        "endereco": "Rua Barretos n222",
+        "cons_cadun": "https://imgur.com/gallery/KezmxiX"
+    },
+    {
+        "cpf": "666.666.666-66",
+        "nome": "Xuxa Meneguei",
+        "data_nascimento": "1712275315",
+        "email": "baixinholandia@yahoo.com",
+        "telefone": "49 96666-6666",
+        "endereco": "Rua De Baixo n666",
+        "cons_cadun": "https://imgur.com/gallery/komidoK"
+    },
+    {
+        "cpf": "111.111.111-11",
+        "nome": "Adão Primogenito",
+        "data_nascimento": "1712275315",
+        "email": "1@yahoo.com",
+        "telefone": "01 91111-1111",
+        "endereco": "Rua Number One n01",
+        "cons_cadun": "https://imgur.com/gallery/01"
+    }
+    ]
+    return [resultado]
