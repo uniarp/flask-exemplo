@@ -92,3 +92,12 @@ def salvar():
         "rfid" : "1711813393"
     }
     return [resultado]
+
+@app.route('/raca')
+def racaDoAnimal ():
+    resultado = {
+        "raca_Id":"123",
+        "nome": "Lucas",
+        "especie": "Golden"
+    }
+    return resultado
