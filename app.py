@@ -14,6 +14,19 @@ def cadastrarTutor():
         "email": "gustavomiguel0312@gmail.com"
         }
     return [resultado]
+
+@app.route('/atendimento')
+def atendimento():
+    resultado = {
+        {"id_consulta" : "725"},
+        {"motivo_atendimento" : "hematoma"},
+        {"diagnóstico" : "trauma"},
+        {"id_animal": "03"},
+        {"id_tutor": "12"},
+        {"data_hora": "28/06, 16:00"}
+    }
+    return [resultado]
+
 @app.route('/AnimalParaAdocao') # URL, path, rota, caminho, link, URI
 def AnimalParaAdocao():
     resultado = {
