@@ -92,3 +92,8 @@ def salvar():
         "rfid" : "1711813393"
     }
     return [resultado]
+
+@app.route('/animal') # url, path, rota, caminho, link, uri
+def doencas():
+    resultado = ['Raiva', 'Sinusite', 'Resfriado']
+    return [resultado]
