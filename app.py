@@ -18,12 +18,12 @@ def cadastrarTutor():
 @app.route('/atendimento')
 def atendimento():
     resultado = {
-        {"id_consulta" : "725"},
-        {"motivo_atendimento" : "hematoma"},
-        {"diagnóstico" : "trauma"},
-        {"id_animal": "03"},
-        {"id_tutor": "12"},
-        {"data_hora": "28/06, 16:00"}
+        "id_consulta" : "725",
+        "motivo_atendimento" : "hematoma",
+        "diagnóstico" : "trauma",
+        "id_animal": "03",
+        "id_tutor": "12",
+        "data_hora": "28/06, 16:00"
     }
     return [resultado]
 
