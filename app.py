@@ -35,6 +35,7 @@ def historico_clinico():
     }
     return [resultado]
 # http://127.0.0.1:5000/soma?a=10&b=15
+
 @app.route('/cadastrar_Doencas') # url, path, rota, caminho, link, uri
 def inicio():
     resultado =  {
@@ -42,6 +43,14 @@ def inicio():
         "nome_doença": "Ehrlichiose",
         "sintomas": "apatia, febre, vômito",
         "tratamentos_associado": "antibióticos"
+    }
+@app.route('/diagnostico') # url, path, rota, caminho, link, uri
+def diagnostico():
+    resultado =  {
+        "tratamento_recomendado": "imobilização por 20 dias",
+        "observacao": "alergia alimentar",
+        "Id_animal": "01234",
+        "medicação": "biovet"
     }
     return [resultado]
 @app.route('/animal') # url, path, rota, caminho, link, uri
