@@ -1,46 +1,35 @@
-from flask import Flask, request
+from flask import Flask, jsonify
 
 app = Flask(__name__)
-
-
-# http://127.0.0.1:5000/
-
-@app.route('/historico_clinico') # url, path, rota, caminho, link, uri
-def historico_clinico():
-    resultado =  {
-        "Nome_tutor": "Daniel",
-        "nome_animal": "Bolo",
-        "data_agendada": "24/04/2019",
-
 # http://127.0.0.1:5000/soma?a=10&b=15
 @app.route('/cadastrar_Doencas') # url, path, rota, caminho, link, uri
 def inicio():
-    resultado =  {
+    resultado = [
+    {
         "id_doenca": "123",
         "nome_doença": "Ehrlichiose",
         "sintomas": "apatia, febre, vômito",
-        "tratamentos_associado": "antibióticos",
-
-@app.route('/animal') # url, path, rota, caminho, link, uri
-def animal():
-    resultado = {
-        'nome_animal': "Carreta",
-        'especie': "cachoro",
-        'raca': "São Bernado",
-        'peso': "67 Kg",
-        'idade': "2 anos",
-        'rfid': "1711813393"
-        }
-
-@app.route('/tutor') # url, path, rota, caminho, link, uri
-def tutor():
-    resultado =  {
-        "cpf": "000.000.000-00",
-        "nome": "Serjao Berranteiro",
-        "data_nascimento": "1712275315",
-        "email": "sergo12345cacadorbaum@yahoo.com",
-        "telefone": "49 99999-9999",
-        "endereco": "Rua Barretos n222",
-        "cons_cadun": "https://imgur.com/gallery/KezmxiX"
+        "tratamentos_associado": "antibióticos"
+    },
+    {
+        "id_doenca": "456",
+        "nome_doenca": "Rinotraqueíte Felina",
+        "sintomas": "espirros, secreção ocular, febre",
+        "tratamentos_associados": "antibióticos, suporte sintomático"
+    },
+    {
+        "id_doenca": "789",
+        "nome_doenca": "Leishmaniose Canina",
+        "sintomas": "lesões de pele, perda de peso, febre",
+        "tratamentos_associados": "tratamento específico, controle de vetores"
+    },
+    {
+        "id_doenca": "101",
+        "nome_doenca": "Peritonite Infecciosa Felina",
+        "sintomas": "dor abdominal, letargia, febre",
+        "tratamentos_associados": "tratamento sintomático, cuidados de suporte"
     }
-    return [resultado]
+]
+    return jsonify(resultado)
+if __name__ == '__main__':
+        app.run(debug=True)
