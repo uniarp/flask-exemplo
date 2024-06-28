@@ -92,3 +92,31 @@ def salvar():
         "rfid" : "1711813393"
     }
     return [resultado]
+
+@app.route('/novotutor')
+def novoTutor():
+    resultado = [{
+        "nome" : "Shaolin Matador de Onça",
+        "especie" : "645.565.284-87",
+        "email" : "shaolinMatadorDeOnca@gmail.com",
+        "endereco" : "Pantanal",
+        "numero" : "49999743209",
+        "financas" : "1200"
+    },{
+        "nome" : "Maguinho do Piaui",
+        "CPF" : "081.952.839-02",
+        "email" : "zMaguinhoFoPiaui@gmail.com",
+        "endereco" : "Piaui",
+        "numero" : "",
+        "financas" : "20000"
+    },{
+        "nome" : "Gustavo Lima",
+        "especie" : "045.458.234.77",
+        "email" : "nivaldoBatista@gmail.com",
+        "endereco" : "Mansão",
+        "numero" : "89220982",
+        "financas" : "1500"
+    }]
+    return [resultado]
+
+
