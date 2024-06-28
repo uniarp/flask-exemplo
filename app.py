@@ -92,3 +92,15 @@ def salvar():
         "rfid" : "1711813393"
     }
     return [resultado]
+    
+@app.route('/historico')
+def historico():
+    resultado = {
+        "motivo_atendimento": "atropelamento",
+        "diagnostico": "pata quebrada",
+        "tratamento_recomendado": "imobilização por 20 dias",
+        "observacao": "alergia alimentar",
+        "Id_animal": "01234",
+        "data_hora": "1713456537"
+    }
+    return [resultado]
