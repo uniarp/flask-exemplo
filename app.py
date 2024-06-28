@@ -95,9 +95,17 @@ def salvar():
 
 @app.route('/raca')
 def racaDoAnimal ():
-    resultado = {
+    resultado = [{
         "raca_Id":"123",
         "nome": "Lucas",
         "especie": "Golden"
-    }
+    },{
+        "raca_Id":"135",
+        "nome": "Luiz",
+        "especie": "Picher"
+        },{
+        "raca_Id":"145",
+        "nome":"Luis",
+        "especie": "cheetos"
+        }]
     return resultado
