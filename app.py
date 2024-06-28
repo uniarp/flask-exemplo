@@ -102,7 +102,7 @@ def cadastraranimal():
         
         "nome_aniaml":"Tusk",
         "especie": "Cachorro",
-        "raça": "Pastor-Alemão",
+        "raça": "Pastor-Alemão 2",
         "sexo": "Macho",
         "peso": "30Kg", 
         "idade_estimada": "7 anos",
