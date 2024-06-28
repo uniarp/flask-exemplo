@@ -92,3 +92,23 @@ def salvar():
         "rfid" : "1711813393"
     }
     return [resultado]
+
+
+
+@app.route('/cadastraranimal') # url, path, rota, caminho, link, uri
+def cadastraranimal():
+    resultado =  {
+        
+        
+        "nome_aniaml":"Tusk",
+        "especie": "Cachorro",
+        "raça": "Pastor-Alemão",
+        "sexo": "Macho",
+        "peso": "30Kg", 
+        "idade_estimada": "7 anos",
+        "historico_clinico": "Animal com vacinação em dia"
+
+    }
+    return [resultado
+    
+    ]
